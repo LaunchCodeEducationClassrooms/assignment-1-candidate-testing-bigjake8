@@ -43,7 +43,7 @@ function gradeQuiz(candidateAnswers) {
                 score += 1
         }
       
-   
+    //   console.log(score)
     }
 
     let grade = ((score) / (questions.length)) * 100;
@@ -57,6 +57,8 @@ function gradeQuiz(candidateAnswers) {
             score = 0
         }
     
+    //console.log(grade)
+        return grade;
 }
 
 function runProgram() {
