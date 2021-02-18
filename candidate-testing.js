@@ -47,7 +47,7 @@ function gradeQuiz(candidateAnswers) {
     }
 
     let grade = ((score) / (questions.length)) * 100;
-      console.log(`Candidate Name: ${candidateName}`);
+    
        console.log(`>>> Overall Grade: ${grade}% (${score} of ${questions.length} responses correct) <<<`);
         if(grade >= 80){
             console.log('>>> Status: PASSED <<<')
@@ -64,7 +64,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-//   console.log('Candidate Name: ' + candidateName +'\n');
+  console.log(`Hello ${candidateName} !`);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 
